@@ -33,7 +33,7 @@ public class ConfigExample /*extends JavaPlugin*/ {
 	}
 	
 	@EventHandler
-	public void entrar(PlayerJoinEvent e) {
+	public void join(PlayerJoinEvent e) {
 		getConfigProfile(e.getPlayer()).getConfig().set("test", true);
 	}*/
 	

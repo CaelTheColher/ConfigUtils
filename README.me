@@ -1,28 +1,5 @@
 A simple way to create configs
+Example in the source.
 
-	
-	public static ConfigExample main;
-	
-	
-	public void onEnable() {
-		main = this;
-	}
-	
-	public void onDisable() {
-		
-	}
-	
-	private static HashMap<String, ConfigProfile> config_profiles = new HashMap<String, ConfigProfile>();
-	
-	public static ConfigProfile getConfigProfile(Player p) {
-		if(!config_profiles.containsKey(p.getName())) {
-			config_profiles.put(p.getName(), new ConfigProfile(p.getName(), "Profiles", main).loadConfig());
-		}
-		return config_profiles.get(p.getName());
-	}
-	
-	@EventHandler
-	public void entrar(PlayerJoinEvent e) {
-		getConfigProfile(e.getPlayer()).getConfig().set("test", true);
-	}
+Hope you enjoyed, follow me on twitter: @HeyZeer0
 
