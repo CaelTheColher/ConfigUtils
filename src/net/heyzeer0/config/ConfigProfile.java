@@ -32,6 +32,10 @@ public class ConfigProfile {
 	
 	public ConfigProfile loadConfig() {
 		
+		if(!new File(pl.getDataFolder()) {
+			new File(pl.getDataFolder()).mkdir();
+		}
+		
 		if(pasta == null) {
 			config_file = new File(pl.getDataFolder(), nome + ".yml");
 		}else{
