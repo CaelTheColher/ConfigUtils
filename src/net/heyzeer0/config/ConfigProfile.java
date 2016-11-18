@@ -32,8 +32,8 @@ public class ConfigProfile {
 	
 	public ConfigProfile loadConfig() {
 		
-		if(!new File(pl.getDataFolder()).exists()) {
-			new File(pl.getDataFolder()).mkdir();
+		if(!pl.getDataFolder().exists()) {
+			pl.getDataFolder().mkdir();
 		}
 		
 		if(pasta == null) {
