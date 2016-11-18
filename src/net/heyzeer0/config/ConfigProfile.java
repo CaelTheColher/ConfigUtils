@@ -32,7 +32,7 @@ public class ConfigProfile {
 	
 	public ConfigProfile loadConfig() {
 		
-		if(!new File(pl.getDataFolder()) {
+		if(!new File(pl.getDataFolder().exists()) {
 			new File(pl.getDataFolder()).mkdir();
 		}
 		
